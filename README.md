@@ -30,24 +30,74 @@ python3.11 -m venv venv
 source venv/bin/activate
 ```
 
+### Intake
+
 ```
 python -m intake.file-intake
 ```
+
+```
+./kcat-clear.sh documents
+```
+
+### Router
 
 ```
 python -m router.document-router
 ```
 
 ```
+./kcat-clear.sh patients
+```
+
+```
+./kcat-clear.sh contracts
+```
+
+```
+./kcat-clear.sh reports
+```
+
+```
+ ./kcat-clear.sh invoices
+```
+
+### Structure for Invoices
+
+
+```
+./kcat-clear.sh invoices
+```
+
+```
 python -m structure-invoice.message-structure
 ```
 
+```
+./kcat-clear.sh structured-invoices
+```
+
+### Structure for Patients
+
+```
+./kcat-clear.sh patients
+```
 
 ```
 python -m structure-patient.message-structure
 ```
 
-Note: requires a llama stack server and has a system dependency on poppler
+```
+./kcat-clear.sh structured-patients
+```
+
+### Patients using vision model
+
+#### Requires a llama stack server 
+
+See https://github.com/burrsutter/llama-stack-tutorial
+
+#### System dependency on poppler
 
 ```
 brew install poppler
@@ -56,6 +106,8 @@ brew install poppler
 ```
 python -m structure-patient-vision.message-structure
 ```
+
+### Sample data
 
 ```
 cd data\sample
