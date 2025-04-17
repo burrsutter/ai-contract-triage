@@ -1,4 +1,8 @@
 
+## ai-contract-triage
+
+This is a follow-up to https://github.com/burrsutter/ai-message-triage
+
 ```
 ./reset.sh
 ```
@@ -38,6 +42,20 @@ python -m router.document-router
 python -m structure-invoice.message-structure
 ```
 
+
+```
+python -m structure-patient.message-structure
+```
+
+Note: requires a llama stack server and has a system dependency on poppler
+
+```
+brew install poppler
+```
+
+```
+python -m structure-patient-vision.message-structure
+```
 
 ```
 cd data\sample

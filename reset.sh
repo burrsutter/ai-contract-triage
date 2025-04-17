@@ -1,4 +1,5 @@
 rm -rf ./data/intake/done
+rm ./data/pngs/*
 
 /opt/homebrew/bin/kafka-topics --bootstrap-server localhost:9092 --delete --topic documents
 /opt/homebrew/bin/kafka-topics --bootstrap-server localhost:9092 --create --topic documents --partitions 1 --replication-factor 1

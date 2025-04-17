@@ -34,10 +34,17 @@ class InvoiceObject(BaseModel):
     invoice_date: Optional[str] = None
     invoice_amount: Optional[float] = None
     bill_to: Optional[str] = None
-    ship_to: Optional[str] = None     
+    ship_to: Optional[str] = None
     payment_terms: Optional[str] = None
     
-
+class PatientObject(BaseModel):
+    last_name: Optional[str] = None
+    first_name: Optional[str] = None    
+    date_of_birth: Optional[str] = None
+    phone: Optional[str] = None 
+    insurance_provider: Optional[str] = None
+    
+    
 class ContractType(str, Enum):
     amzn = "aws"
     crm = "salesforce"
