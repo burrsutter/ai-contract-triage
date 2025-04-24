@@ -2,6 +2,7 @@
 .DS_Store
 venv/
 data/intake/done
+data/pngs
 __pycache__/
 *.pyc
 *.pyo
